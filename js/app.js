@@ -6,8 +6,8 @@ var target = null;
 
 // initialize our map
 var map = L.map("map", {
-	center: [-1.2836622060674874, 36.822524070739746],
-	zoom: 16 //set the zoom level
+	center: [41.52506170249708, -8.772969245910646],
+	zoom: 15 //set the zoom level
 });
 
 //add openstreet map baselayer to the map
@@ -24,7 +24,7 @@ var OpenStreetMap = L.tileLayer(
 var pathLayer = L.geoJSON(null);
 
 // draggable marker for starting point. Note the marker is initialized with an initial starting position
-var sourceMarker = L.marker([-1.283147351126288, 36.822524070739746], {
+var sourceMarker = L.marker([41.53145510756294, -8.776016235351564], {
 	draggable: true
 })
 	.on("dragend", function(e) {
@@ -35,7 +35,7 @@ var sourceMarker = L.marker([-1.283147351126288, 36.822524070739746], {
 	.addTo(map);
 
 // draggbale marker for destination point.Note the marker is initialized with an initial destination positon
-var targetMarker = L.marker([-1.286107765621784, 36.83449745178223], {
+var targetMarker = L.marker([41.52506170249708, -8.772969245910646], {
 	draggable: true
 })
 	.on("dragend", function(e) {
