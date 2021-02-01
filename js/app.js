@@ -1,4 +1,4 @@
-var geoserverUrl = "http://127.0.0.1:8082/geoserver";
+var geoserverUrl = "http://206.189.102.139:8080/geoserver";
 var selectedPoint = null;
 
 var source = null;
@@ -7,7 +7,7 @@ var target = null;
 // initialize our map
 var map = L.map("map", {
 	center: [41.52506170249708, -8.772969245910646],
-	zoom: 15 //set the zoom level
+	zoom: 15
 });
 
 //add openstreet map baselayer to the map
@@ -15,8 +15,7 @@ var OpenStreetMap = L.tileLayer(
 	"http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 	{
 		maxZoom: 19,
-		attribution:
-			'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}
 ).addTo(map);
 
