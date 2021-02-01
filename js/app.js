@@ -1,4 +1,4 @@
-var geoserverUrl = "http://206.189.102.139:8080/geoserver";
+var geoserverUrl = "https://arqsistgateway.azurewebsites.net/geoserver";
 var selectedPoint = null;
 
 var source = null;
