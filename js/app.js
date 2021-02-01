@@ -12,7 +12,7 @@ var map = L.map("map", {
 
 //add openstreet map baselayer to the map
 var OpenStreetMap = L.tileLayer(
-	"http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+	"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 	{
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
