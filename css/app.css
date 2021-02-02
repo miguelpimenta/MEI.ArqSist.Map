@@ -5,7 +5,7 @@ html, body, #container {
 }
 
 body {
-  padding-top: 50px;
+  padding: 5px;
 }
 
 /*this is important to give the map a height*/
