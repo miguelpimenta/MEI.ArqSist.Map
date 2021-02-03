@@ -81,13 +81,13 @@ function getRoute() {
 		pathLayer = L.geoJSON(data);
 		map.addLayer(pathLayer);
 
-		//calcular a distancia caminho mais curto
-		i=0;
-		distance=0;
+		// calcular a distancia caminho mais curto
+		i = 0;
+		distance = 0;
 		while (i < data.features.length) {
 			distance += data.features[i].properties.distance 
 			i++;
-			}
+		}
 		alert('Distance:'+distance.toFixed(2)+' km');
 	});
 }
