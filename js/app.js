@@ -85,7 +85,7 @@ function getRoute() {
 		i=0;
 		distance=0;
 		while (i < data.features.length) {
-			distancia += data.features[i].properties.distance 
+			distance += data.features[i].properties.distance 
 			i++;
 			}
 		alert('Distance:'+distance.toFixed(2)+' km');
